@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painting to Sketch Converter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+    }
+    h1 {
+      color: #333;
+    }
+    input[type="file"] {
+      margin: 20px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    canvas {
+      margin: 20px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #007BFF;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Painting to Sketch Converter</h1>
+    <input type="file" id="uploadImage" accept="image/*">
+    <canvas id="originalCanvas"></canvas>
+    <canvas id="sketchCanvas"></canvas>
+    <button id="convertButton">Convert to Sketch</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
